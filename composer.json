@@ -1,0 +1,20 @@
+{
+  "name": "sales/dashboard",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eugan Blotskiy",
+      "email": "lovecraft.crowley@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Base\\": "Base",
+      "App\\": "App",
+      "Config\\": "Config"
+    }
+  }
+}
