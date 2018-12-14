@@ -11,6 +11,7 @@ This is straightforward MVC Application
 
 - Clone the repo
 - Restore the `sales` DB from `database.sql`
+- Edit DB configuration in `Config\Db`
 
 ### Build sources:
 
