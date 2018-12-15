@@ -13,9 +13,7 @@ use Base\View;
 class Customer extends Controller
 {
     /**
-     * @param array $request
-     * @return mixed|void
-     * @throws \Exception
+     * {@inheritdoc}
      */
     public function action(array $request)
     {

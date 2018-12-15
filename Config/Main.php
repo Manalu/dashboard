@@ -23,4 +23,16 @@ class Main
         "/^\/order\/?(.+)/" => ['App\Controllers\Order', 'action'],
         "/^\/revenue\/?(.+)/" => ['App\Controllers\Revenue', 'action']
     ];
+
+    /**
+     *
+     * The route of the home page
+     *
+     * @var array
+     */
+    const ROOT = ['App\Controllers\Home', 'action'];
+
+    const ERRORS_LEVEL = E_ALL;
+    const ERROR_HANDLER = 'App\Error::errorHandler';
+    const EXCEPTION_HANDLER = 'App\Error::exceptionHandler';
 }

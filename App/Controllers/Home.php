@@ -12,9 +12,7 @@ use Base\View;
 class Home extends Controller
 {
     /**
-     * @param array $params
-     * @return mixed|void
-     * @throws \Exception
+     * {@inheritdoc}
      */
     public function action(array $params)
     {

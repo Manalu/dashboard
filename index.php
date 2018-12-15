@@ -2,9 +2,10 @@
 
 require_once 'vendor/autoload.php';
 
-error_reporting(E_ALL);
-set_error_handler('Base\Error::errorHandler');
-set_exception_handler('Base\Error::exceptionHandler');
+use Config\Main as Config;
 
-$routes = Config\Main::ROUTES;
-App\Router::run($routes);
+error_reporting(Config::ERRORS_LEVEL);
+set_error_handler(Config::ERROR_HANDLER);
+set_exception_handler(Config::EXCEPTION_HANDLER);
+
+Base\Router::run(Config::class);

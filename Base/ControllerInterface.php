@@ -9,7 +9,8 @@ interface ControllerInterface
 {
     /**
      * @param array $request
-     * @return mixed
+     * @return mixed|void
+     * @throws \Exception
      */
     public function action(array $request);
 }
