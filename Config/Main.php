@@ -32,7 +32,21 @@ class Main
      */
     const ROOT = ['App\Controllers\Home', 'action'];
 
+    /**
+     * Set error reporting level
+     * @var string
+     */
     const ERRORS_LEVEL = E_ALL;
+
+    /**
+     * Set Error handler
+     * @var string
+     */
     const ERROR_HANDLER = 'App\Error::errorHandler';
+
+    /**
+     * Set Exception handler
+     * @var string
+     */
     const EXCEPTION_HANDLER = 'App\Error::exceptionHandler';
 }
